@@ -104,16 +104,3 @@ th { background: #edf4ff; }
   .hero h1 { font-size: 1.6rem; }
   .actions { flex-direction: column; }
 }
-
-.site-footer {
-  margin-top: 1.2rem;
-  background: #0f3561;
-  color: #dce9fb;
-  font-size: .92rem;
-  padding: .9rem 0;
-}
-.site-footer a {
-  color: #ffffff;
-  text-decoration: underline;
-  font-weight: 700;
-}
