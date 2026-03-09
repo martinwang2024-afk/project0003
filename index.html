@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Racing Pigeon Genetic Calculator | Breeding DNA Gene Tool</title>
+  <meta name="description" content="Professional racing pigeon genetics calculator for breeders and DNA labs. Predict offspring genotype probability, genetic score, and breeding potential across LDHA, CRY1, DRD4, MSTN, LRP8, GSR, CASK, and F-KER." />
+  <meta name="keywords" content="racing pigeon genetic calculator,pigeon DNA tool,LDHA,CRY1,DRD4,MSTN,LRP8,GSR,CASK,F-KER,breeding genetics" />
+  <meta name="theme-color" content="#1f5ea8" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Racing Pigeon Genetic Calculator",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any",
+    "description": "A client-side calculator that predicts racing pigeon offspring genotypes and performance potential using Mendelian inheritance.",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What is pigeon genetic testing?","acceptedAnswer":{"@type":"Answer","text":"Pigeon genetic testing identifies DNA variants associated with endurance, navigation, cognition, and other racing-related traits."}},
+      {"@type":"Question","name":"How accurate is pigeon DNA testing?","acceptedAnswer":{"@type":"Answer","text":"Laboratory DNA testing is highly accurate for genotype identification when quality controls and replicate testing are used."}},
+      {"@type":"Question","name":"Which genes influence racing performance?","acceptedAnswer":{"@type":"Answer","text":"Commonly profiled genes include LDHA, CRY1, DRD4, MSTN, LRP8, GSR, CASK, and F-KER."}},
+      {"@type":"Question","name":"How do breeders interpret genotype results?","acceptedAnswer":{"@type":"Answer","text":"Breeders compare favorable genotypes, aggregate multi-gene scores, and balance pairings to improve offspring potential."}},
+      {"@type":"Question","name":"How does probability prediction work?","acceptedAnswer":{"@type":"Answer","text":"The calculator uses Mendelian inheritance and Punnett square logic to estimate offspring genotype probabilities."}},
+      {"@type":"Question","name":"Can this replace race training?","acceptedAnswer":{"@type":"Answer","text":"No. Genetics supports decision-making, but conditioning, management, and environment remain essential."}},
+      {"@type":"Question","name":"How can I improve breeding success?","acceptedAnswer":{"@type":"Answer","text":"Use diverse pairings, prioritize balanced trait profiles, and combine DNA data with actual race performance."}},
+      {"@type":"Question","name":"What does No Data Support mean?","acceptedAnswer":{"@type":"Answer","text":"It indicates currently limited evidence linking that genotype to clear performance advantage in available datasets."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Professional Genetics Laboratory Tool</div>
+      <h1>Racing Pigeon Genetic Calculator</h1>
+      <p>Breeding DNA Tool (LDHA | CRY1 | DRD4 | MSTN | LRP8 | GSR | CASK | F-KER)</p>
+      <p class="hero-sub">Scientific genotype prediction for breeders and DNA testing services worldwide.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Calculator Interface</h2>
+      <p>Select participating genes and parent genotypes to predict offspring potential.</p>
+      <div id="geneSelection" class="gene-grid"></div>
+      <div id="parentInputs" class="inputs-grid"></div>
+      <div class="actions">
+        <button id="calculateBtn" class="btn primary ripple">Calculate Genetic Potential</button>
+        <button id="resetBtn" class="btn">Reset</button>
+        <button id="copyBtn" class="btn">Copy Result</button>
+        <button id="csvBtn" class="btn">Download CSV</button>
+        <button id="pdfBtn" class="btn">Download PDF Report</button>
+      </div>
+      <div id="warningBox" class="warning"></div>
+    </section>
+
+    <section class="card" id="resultsSection">
+      <h2>Results Dashboard</h2>
+      <div id="bestResult" class="best-result"></div>
+      <div class="chart-grid">
+        <canvas id="probabilityChart" width="600" height="220"></canvas>
+        <canvas id="radarChart" width="600" height="220"></canvas>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Offspring Genotype</th><th>Probability (%)</th><th>Performance Rating</th><th>Genetic Score</th></tr>
+        </thead>
+        <tbody id="resultsTableBody"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Genetic Explanation Panel</h2>
+      <div id="explanationPanel" class="explain-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Breeding Recommendation</h2>
+      <div id="recommendationBox"></div>
+      <p class="disclaimer"><strong>Disclaimer:</strong> These recommendations are for reference only and should be combined with race records, health status, and professional breeding judgment.</p>
+    </section>
+
+    <section class="card service">
+      <h2>Professional DNA Testing Service</h2>
+      <ul>
+        <li>Global Sample Acceptance</li>
+        <li>Racing Pigeon Flight Ability DNA Testing Service</li>
+        <li>10+ Years Professional Laboratory Testing</li>
+        <li>Stable and Accurate Results</li>
+        <li>Multiple Replicate Testing Guarantee</li>
+      </ul>
+      <p><strong>Martin.W</strong><br>Email: <a href="mailto:martin@senobiocorp.com">martin@senobiocorp.com</a><br>Phone (Whatsapp | Wechat): +86 13323237275</p>
+      <p><strong>Aaron.W</strong><br>Email: <a href="mailto:aaron@senobiocorp.com">aaron@senobiocorp.com</a><br>Phone (Whatsapp | Wechat): +86 13313137465</p>
+    </section>
+
+    <section class="card">
+      <h2>Share</h2>
+      <div class="share-links">
+        <a target="_blank" rel="noopener" href="#" id="shareX">Twitter / X</a>
+        <a target="_blank" rel="noopener" href="#" id="shareFb">Facebook</a>
+        <a target="_blank" rel="noopener" href="#" id="shareLi">LinkedIn</a>
+        <a target="_blank" rel="noopener" href="#" id="shareWa">WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="card faq">
+      <h2>FAQ</h2>
+      <details><summary>What is pigeon genetic testing?</summary><p>DNA analysis that detects variants linked to racing traits.</p></details>
+      <details><summary>How accurate is pigeon DNA testing?</summary><p>High for genotype calls with quality laboratory processes.</p></details>
+      <details><summary>Which genes influence racing performance?</summary><p>LDHA, CRY1, DRD4, MSTN, LRP8, GSR, CASK and F-KER are commonly evaluated.</p></details>
+      <details><summary>How do breeders interpret genotype results?</summary><p>By comparing favorable combinations and balancing multi-trait outcomes.</p></details>
+      <details><summary>How does probability prediction work?</summary><p>Mendelian inheritance and Punnett squares estimate offspring frequencies.</p></details>
+      <details><summary>How to improve breeding success?</summary><p>Pair compatible birds, maintain diversity, and validate with race outcomes.</p></details>
+      <details><summary>Can this tool run offline?</summary><p>Yes, once cached with the service worker, core pages are available offline.</p></details>
+      <details><summary>Does high score guarantee race wins?</summary><p>No. Score is one factor alongside training, care, and environment.</p></details>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      Tool Owner: <a href="https://senobiocorp.com/" target="_blank" rel="noopener">SENO Biotech Lab</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
