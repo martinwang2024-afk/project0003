@@ -1,0 +1,42 @@
+{
+  "LDHA": {
+    "genotypeOptions": ["AA", "AG", "GG"],
+    "performanceRating": {"AA": "Excellent", "AG": "Good", "GG": "Average"},
+    "description": "Energy metabolism and endurance capacity."
+  },
+  "CRY1": {
+    "genotypeOptions": ["TTTT", "ATTT", "ATAT", "AGTT", "AGAT", "AGAG"],
+    "performanceRating": {"TTTT": "Excellent", "ATTT": "Good", "ATAT": "Good", "AGTT": "Good", "AGAT": "Good", "AGAG": "Average"},
+    "description": "Circadian rhythm gene involved in solar navigation."
+  },
+  "DRD4": {
+    "genotypeOptions": ["CTCT", "TTCC", "CCCT", "CTCC", "CCCC", "CCTT", "CTTT", "TTTT"],
+    "performanceRating": {"CTCT": "Very Excellent", "TTCC": "Excellent", "CCCT": "Good", "CTCC": "Good", "CCCC": "Average", "CCTT": "No Data Support", "CTTT": "No Data Support", "TTTT": "No Data Support"},
+    "description": "Dopamine receptor gene linked to homing instinct."
+  },
+  "MSTN": {
+    "genotypeOptions": ["CC", "CT", "TT"],
+    "performanceRating": {"CC": "Excellent", "CT": "Good", "TT": "Average"},
+    "description": "Myostatin gene controlling muscle strength and sprint power."
+  },
+  "LRP8": {
+    "genotypeOptions": ["HH", "QH", "QQ"],
+    "performanceRating": {"HH": "Excellent", "QH": "Good", "QQ": "Average"},
+    "description": "Neural receptor affecting learning and memory."
+  },
+  "GSR": {
+    "genotypeOptions": ["TT", "CT", "CC"],
+    "performanceRating": {"TT": "Excellent", "CT": "Good", "CC": "Average"},
+    "description": "Oxidative stress defense linked to weather tolerance."
+  },
+  "CASK": {
+    "genotypeOptions": ["AA", "GA", "GG"],
+    "performanceRating": {"AA": "Excellent", "GA": "Good", "GG": "Average"},
+    "description": "Neural development gene influencing cognition."
+  },
+  "F-KER": {
+    "genotypeOptions": ["TT", "GT", "GG"],
+    "performanceRating": {"TT": "Excellent", "GT": "Good", "GG": "Average"},
+    "description": "Keratin feather structure affecting wing aerodynamics."
+  }
+}
